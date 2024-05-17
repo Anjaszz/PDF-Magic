@@ -320,8 +320,8 @@ nav .nav-menu>li .dropdown-menus .right-section .dropdown-links li a:hover {
 .box {
 	position: relative;
 	width: 100%;
-	padding-right: 15px;
-	padding-left: 15px;
+	padding-right: 3px;
+	padding-left: 3px;
 
 }
 
@@ -339,6 +339,7 @@ nav .nav-menu>li .dropdown-menus .right-section .dropdown-links li a:hover {
 }
 
 .our-services .icon {
+	
 	margin-bottom: -21px;
 	transform: translateY(-50%);
 	text-align: center;
@@ -750,6 +751,9 @@ nav .nav-menu>li .dropdown-menus .right-section .dropdown-links li a:hover {
 		margin: 5px 0;
 		text-align: center;
 	}
+	.our-services p {
+		font-size: small;
+	}
 }
 
 .common-btn {
@@ -789,4 +793,35 @@ nav .nav-menu>li .dropdown-menus .right-section .dropdown-links li a:hover {
 .services-p,
 .services-head {
 	font-family: 'changa', 'cursive';
+}
+
+@media (max-width: 768px) {
+
+	.footer .copyright p,
+	.footer .copyright .col-md-6:last-child p {
+		margin: 5px 0;
+		text-align: center;
+		font-size: small;
+	}
+	.our-services p {
+		font-size: 13px;
+	}
+	.card-title,
+.card-text,
+.card-heading {
+	font-size: 15px;
+	margin-left: 10px;
+}
+.footer .footer-menu .f-menu a{
+	font-size: 12px;
+	margin-right: 10;
+}
+.footer .newsletter .form {
+	width: 300px;
+	margin-left: -55px;
+}
+.footer .newsletter h2 {
+	font-size: 16px;
+}
+
 }

@@ -17,40 +17,37 @@
 <body>
   <%- include('includes/nav.ejs') %>
 
-    <div class="container main-container">
-      <h1 class="text-center mt-5 font-weight-bold pt-4 heading-main">Rotate PDF</h1>
-      <h5 class="text-center mt-3 font-weight-bold heading-main">Rotate your PDF files as you want. Rotate multiple PDF
-        at same time defining degrees</h5>
-      <div class="row justify-content-center mt-5">
+  <div class="container main-container">
+    <h1 class="text-center mt-5 font-weight-bold pt-4 heading-main">Putar PDF</h1>
+    <h5 class="text-center mt-3 font-weight-bold heading-main">Putar file PDF Anda sesuai keinginan. Putar beberapa PDF sekaligus dengan menentukan derajat putaran.</h5>
+    <div class="row justify-content-center mt-5">
         <div class="col-md-10 text-center">
-          <form action="/rotate-pdf-form" method="POST" enctype="multipart/form-data" id="pdf-dropzone">
-            <div class="fallback">
-              <div class="custom-file-upload custom-file-upload-color-1" id="pdf-dropzone">
-                <img src="/images/pdf.png" alt="" srcset="" width="72" height="72">
-                <label for="pdfs">Pilih File PDF</label>
-                <input type="file" name="file" id="pdfs" accept=".pdf" required multiple required
-                  class="form-control-file">
-              </div> <br><br>
-              <label for="rotationDirection">Select rotation direction:</label>
-              <select name="rotationDirection" id="rotationDirection">
-                <option value="left">Left</option>
-                <option value="right">Right</option>
-                <option value="upsideDown">Upside Down</option>
-              </select>
+            <form action="/rotate-pdf-form" method="POST" enctype="multipart/form-data" id="pdf-dropzone">
+                <div class="fallback">
+                    <div class="custom-file-upload custom-file-upload-color-1" id="pdf-dropzone">
+                        <img src="/images/pdf.png" alt="PDF icon" width="72" height="72">
+                        <label for="pdfs">Pilih File PDF</label>
+                        <input type="file" name="file" id="pdfs" accept=".pdf" required multiple class="form-control-file">
+                    </div>
+                    <br><br>
+                    <label for="rotationDirection">Pilih arah putaran:</label>
+                    <select name="rotationDirection" id="rotationDirection" class="form-control">
+                        <option value="left">Kiri</option>
+                        <option value="right">Kanan</option>
+                        <option value="upsideDown">Terbalik</option>
+                    </select>
+                </div>
+                <input type="submit" value="Putar PDF" class="btn-lg common-btn pl-5 pr-5 mb-5 mt-5">
+            </form>
+            <div class="container">
+                <div class="pdfhead mt-4 text-center mb-3"></div>
+                <ul id="pdf-list" class="list-group mb-4"></ul>
+                <div class="row">
+                </div>
             </div>
-            <input type="submit" value="Rotate PDF" class="btn-lg common-btn pl-5 pr-5 mb-5 mt-5">
-          </form>
-          <div class="container">
-            <div class="pdfhead mt-4 text-center mb-3"></div>
-            <ul id="pdf-list" class="list-group mb-4"></ul>
-            <div class="row">
-            </div>
-          </div>
         </div>
-      </div>
     </div>
-
-
+</div>
 
     <%- include('includes/alltools.ejs') %>
 
