@@ -734,7 +734,7 @@ nav .nav-menu>li .dropdown-menus .right-section .dropdown-links li a:hover {
 }
 
 .footer .copyright p a {
-	color: #5643fa;
+	color: #b92703;
 	font-weight: 500;
 	letter-spacing: 1px;
 }
@@ -744,17 +744,6 @@ nav .nav-menu>li .dropdown-menus .right-section .dropdown-links li a:hover {
 	text-decoration: none;
 }
 
-@media (max-width: 768px) {
-
-	.footer .copyright p,
-	.footer .copyright .col-md-6:last-child p {
-		margin: 5px 0;
-		text-align: center;
-	}
-	.our-services p {
-		font-size: small;
-	}
-}
 
 .common-btn {
 	font-family: 'changa', 'cursive';
@@ -804,7 +793,7 @@ nav .nav-menu>li .dropdown-menus .right-section .dropdown-links li a:hover {
 		font-size: small;
 	}
 	.our-services p {
-		font-size: 13px;
+		font-size: 12px;
 	}
 	.card-title,
 .card-text,
@@ -823,5 +812,23 @@ nav .nav-menu>li .dropdown-menus .right-section .dropdown-links li a:hover {
 .footer .newsletter h2 {
 	font-size: 16px;
 }
+.our-services h4 {
+	font-size: 17px;
+}
 
+}
+@media (max-width: 600px) {
+	.our-services p {
+		font-size: 14px;
+	}
+	.our-services h4 {
+		font-size: 15px;
+	}
+	.footer .newsletter .form {
+		
+		margin-left: -6px;
+	}
+	h1{
+		font-size: x-large;
+	}
 }

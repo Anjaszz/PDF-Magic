@@ -5,10 +5,7 @@ input[type="file"] {
     visibility: hidden;
     position: absolute;
   }
-  .container{
-    width: 70%;
-   
-  }
+
   .container::-webkit-scrollbar {
     width: 5px;
     
